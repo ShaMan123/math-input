@@ -134,6 +134,7 @@ class App extends React.Component {
             <Keypad
                 onElementMounted={node => {
                     if (node && !this.state.keypadElement) {
+                        node.activate()
                         this.setState({ keypadElement: node });
                     }
                 }}

@@ -9,7 +9,8 @@
     "test": "mocha test/test_*.js --compilers js:babel-register",
     "watch_test": "mocha test/test_spec.js --watch --compilers js:babel-register",
     "watch": "node ./tools/build.js --dev",
-    "build": "node ./tools/build.js"
+    "build": "node ./tools/build.js",
+    "deploy": "firebase deploy --only hosting:math-input"
   },
   "repository": {
     "type": "git",
